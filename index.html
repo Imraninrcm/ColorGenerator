@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Generator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    </head>
+  <body>
+    <h1 class="heading">Color Generator</h1>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-6">
+          
+          <h3> <i
+            class="fa-solid fa-angles-right fa-bounce"
+            style="color: #371895"
+          ></i> Generate Random Color</h3>
+          <br />
+          <button type="button" class="btn btn-outline-info btn-lg" id="btn1">
+            Generate Color
+          </button>
+          <br />
+          <br />
+          <div>
+            <p style="color: crimson; font-size: 25px;">
+              Your generated color
+              <i
+                class="fa-solid fa-arrow-down fa-bounce"
+                style="color: #6f1d81"
+              ></i>
+            </p>
+          </div>
+
+          <div id="div-size1"><p class="divPara1"></p></div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="col-md-6">
+          <label for="hex-color" class="hexaColor"></label>
+            
+            <h3> <i
+              class="fa-solid fa-angles-right fa-shake"
+              style="color: #371895"
+            ></i>Enter the Hex code to get the color:</h3></label
+          ><br />
+         
+          <input
+            type="text"
+            placeholder="Enter 6 digit Hex-code"
+            id="hex-color"
+          />
+          <br> <br>
+          <button type="button" class="btn btn-outline-warning btn-lg" id="btn2">
+            Generate Color
+          </button>
+          <div>
+            <p style="color: cornflowerblue; font-size: 25px;">
+              Your generated color
+              <i
+                class="fa-solid fa-arrow-down fa-bounce"
+                style="color: #3d0a71"
+              ></i>
+            </p>
+            
+          </div>
+          <div id="div-size2"><p class="divPara2"></p></div>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col">
+          <br />
+          <br />
+          <label
+            for="exampleColorInput"
+            class="form-label"
+            style="
+              color: #14ffb9;
+              font-size: 20px;
+              font-weight: 700;
+              text-decoration: dashed #0d7d5b underline;
+            "
+            >Pic your favourite color here
+            <i
+              class="fa-solid fa-arrow-down fa-bounce"
+              style="color: #0d7d5b"
+            ></i> </label
+          ><br />
+          <input
+            type="color"
+            class="form-control form-control-color"
+            id="exampleColorInput"
+            value="#563d7c"
+            title="Choose your color"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
