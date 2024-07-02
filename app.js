@@ -8,9 +8,9 @@ btn.addEventListener("click", function () {
   divParaOne.innerText = randomColor;
 
   if (getRandomColor()[1] == true) {
-    divParaOne.style.color = "rgb(255,255,255)";
-  } else {
     divParaOne.style.color = "rgb(0,0,0)";
+  } else {
+    divParaOne.style.color = "rgb(255,255,255)";
   }
 
   let divColor1 = document.querySelector("#div-size1");
@@ -21,13 +21,12 @@ function getRandomColor() {
   let red = Math.floor(Math.random() * 256);
   let green = Math.floor(Math.random() * 256);
   let blue = Math.floor(Math.random() * 256);
-  let whiteIndex = false;
-  if (red >= 180 && green >= 170 && blue >= 170) {
-    whiteIndex = true;
+  let blackIndex = false;
+  if (((red*0.299) + (green*0.587) + ( blue*0.114)) > 186) {
+    blackIndex = true;
   }
   let color = `rgb(${red},${green},${blue})`;
-  let ans = [color, whiteIndex];
-  return ans;
+  return  [color, blackIndex];
 }
 
 let hexCode = document.querySelector("#hex-color");
